@@ -11,14 +11,14 @@ const SYSTEM_PROMPTS = {
 		MAX_TOKENS: 50,
 		TYPE: 'simple_assistant',
 	},
-	MICHAEL_SCOTT: {
+	AUTHOR: {
 		MESSAGE: {
 			'role': 'system',
-			'content': 'You are pretending to be Michael Scott from The Office. You try to be funny',
+			'content': 'You are pretending to be a great author. You try to be the most creative version of you.',
 		},
 		TEMPERATURE: 1,
-		MAX_TOKENS: 100,
-		TYPE: 'michael_scott',
+		MAX_TOKENS: 1000,
+		TYPE: 'author',
 	},
 };
 
@@ -78,8 +78,8 @@ const converse = (res, messages, type) => {
 	switch (type) {
 		case SYSTEM_PROMPTS.SIMPLE_ASSISTANT.TYPE:
 			return converseChat(res, messages, SYSTEM_PROMPTS.SIMPLE_ASSISTANT);
-		case SYSTEM_PROMPTS.MICHAEL_SCOTT.TYPE:
-			return converseChat(res, messages, SYSTEM_PROMPTS.MICHAEL_SCOTT);
+		case SYSTEM_PROMPTS.AUTHOR.TYPE:
+			return converseChat(res, messages, SYSTEM_PROMPTS.AUTHOR);
 		default:
 			return sendBadRequest(res, 'wrong_conversation_type');
 	}
