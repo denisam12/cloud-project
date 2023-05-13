@@ -53,7 +53,7 @@ function ChatComponent(props) {
 					},
 					body: JSON.stringify({
 						messages: filteredChatHistory,
-						type: 'michael_scott',
+						type: 'author',
 					}),
 					signal: AbortSignal.timeout(20000),
 				});
@@ -73,11 +73,11 @@ function ChatComponent(props) {
 	}
 
 	return (
-		<div className={"w-full max-w-[1500px] mx-auto my-10"}>
-			<div className={"border border-b-0 rounded-lg border-gray-300'"}>
+		<div className={"w-full max-w-[1500px] mx-auto my-10 h-screen"}>
+			<div className={"border border-b-0 rounded-lg border-black'"}>
 				<div className={'border-b text-center px-[20px] py-[10px]'}>
 					<span className={'text-md font-bold text-gray-900'}>
-						This a chat component that looks like Yahoo!
+						AuthorBot
 					</span>
 				</div>
 				<MessageBox chatMessages={chatMessages}/>
@@ -85,7 +85,7 @@ function ChatComponent(props) {
 			<input
 				id={'chat-input'}
 				type={'text'}
-				className="bg-gray-50 border border-gray-300 border-x-0 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-4"
+				className="bg-gray-50 mt-6 border border-gray-300 border-x-0 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-4"
 				placeholder="Type something..."
 				onKeyDown={handleKeyDown}
 			/>
