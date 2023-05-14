@@ -1,38 +1,50 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+*Link-uri utile:
+Link acces GitHub: https://github.com/denisam12/cloud-project
+Link acces aplicație: https://cloud-project-orpin.vercel.app/
+Link acces video prezentare: https://youtu.be/V5RB5XCYk6o
 
-## Getting Started
+1. Introducere
+	Aplicația dezvoltată în cadrul proiectului de seminar se numește ArticleIT și scopul principal al acesteia este sa funcționeze asemenea unui blog și poate să fie un motor de afișare și de creare a unor articole și oferă, de asemenea, posibilitatea de a afișa anumite informații pe care ChatGPT le poate oferi pe diverse teme de interes în domeniul IT. 
 
-First, run the development server:
+2. Descrierea problemei
+	Există o mulțime de blog-uri personale ale foarte multor indivizi sau entități, însă există și o oarecare nevoie de un loc comun, pe care mulți oameni să îl acceseze astfel încât să aibă o locație de creare și postare a unor articole diverse din domeniul IT. Astfel, aplicația ArticleIT devine un mod mai facil prin care utilizatorii săi pot să își creeze și posteze cele mai bune variante ale articolelor pe care le pot concepe inspirându-se din informații utile, oferite de ChatGPT.
+	Aplicația are o interfață intuitivă și funcționalități facile de utilizat de către persoanele care o accesează, reușind să le ofere acestora o sursă continuă de informație (ChatGPT), apoi persoanele adunându-și anumite detalii utile, pot să definitiveze un articol care poate fi citit și devenind o sursă de inspirație la rândul său. 
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+3. Descriere API
+a) S-a folosit MongoDB pentru a permite salvarea datelor introduse în cadrul aplicației, specific articolele create.
+ ![WhatsApp Image 2023-05-14 at 22 24 35](https://github.com/denisam12/cloud-project/assets/132089622/ee69b68d-60ee-4544-9949-3795808d1835)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+b) API-ul de ChatGPT ajută aplicația să devină o punte de legătură cu o sursă infinită de informații de actualitate, care sunt menite să ajute mai apoi la definitivarea articolelor finale.
+ ![Captură de ecran 2023-05-14 223034](https://github.com/denisam12/cloud-project/assets/132089622/0c301cd2-d043-47ae-991b-fadd60eab80e)
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Utilizare API ChatGPT
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+4. Fluxul de date
+	Primul pas făcut pentru a accesa aplicația este aceea de a accesa link-ul acesteia. După care prima interacțiune pe care utilizatorul o are este cu pagina de HomePage.
+ ![ppo](https://github.com/denisam12/cloud-project/assets/132089622/279827c0-e1b0-46ee-8fe3-9c94448176cc)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+	Următoarea secvență de cod prezintă API-ul de ChatGPT care ajută la colectarea informațiilor necesare pentru a realiza articolele. 
+ 
+![sfefs](https://github.com/denisam12/cloud-project/assets/132089622/1c13bf59-d073-4c7d-9db4-9a0814080f98)
 
-## Learn More
+5. Capturi de ecran ale aplicației
+ 
+![dsefsf](https://github.com/denisam12/cloud-project/assets/132089622/c91db385-15e3-444d-a7eb-ac59e3ceeaed)
+HomePage
 
-To learn more about Next.js, take a look at the following resources:
+ ![ereer](https://github.com/denisam12/cloud-project/assets/132089622/08b959ac-843d-4510-9d6f-2eb918ce78c5)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Exemplu de utilizare pagina ChatGPT – AuthorBot
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+![insert](https://github.com/denisam12/cloud-project/assets/132089622/4589e35b-5fbd-429c-b9ec-5128d32669b7)
 
-## Deploy on Vercel
+Pagina de Insert – Exemplu de inserare articol „Cloud Computing is the new ERA”
+ 
+![homepage](https://github.com/denisam12/cloud-project/assets/132089622/7a5c79ad-9289-4d27-86af-6dc1e2153c23)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+HomePage – cu noul articol adăugat
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+6. Referințe
+Curs Cloud Computing - https://online.ase.ro/course/view.php?id=30796
+Seminar Cloud Computing - https://online.ase.ro/course/view.php?id=30841
